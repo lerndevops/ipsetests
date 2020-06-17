@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ip-test-Suite">
+  <test thread-count="5" name="ip-setests">
+    <classes>
+      <class name="com.ipsetests.gmail"/>
+      <class name="com.ipsetests.facebook"/>
+      <class name="com.ipsetests.intellipaat"/>
+    </classes>
+  </test> <!-- ip-setests -->
+</suite> <!-- ip-test-Suite -->
