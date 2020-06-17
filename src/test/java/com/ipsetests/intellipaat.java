@@ -17,7 +17,7 @@ public class intellipaat {
 	@BeforeMethod
 	public void launch() {
 		
-	    System.setProperty("webdriver.chrome.driver", "C:\\Users\\Nareshwar\\Downloads\\chromedriver.exe");
+	    System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 	    driver = new ChromeDriver();
 	    driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 	    driver.get("https://intellipaat.com");
@@ -62,7 +62,7 @@ public class intellipaat {
 
     @AfterMethod
 	public void close() {
-	    //driver.close();	
+	    driver.close();	
 	    //System.out.println("Executed After the Test");
 	}
 
